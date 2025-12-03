@@ -1,289 +1,287 @@
-
-<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Profil TKJ - 11 - Saiful Anam</title>
-  <style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profil TKJ - 11 - Saiful Anam</title>
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --card-bg: #1f242c;
+            --primary: #8ab4f8;
+            --secondary: #9aa0a6;
+            --text-main: #e8eaed;
+            --border-light: #5f6368;
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            --radius: 12px;
+        }
 
-    :root {
-      --bg: #f7f8fb;
-      --card-bg: #ffffff;
-      --primary: #007bff;
-      --secondary: #6c757d;
-      --text-main: #343a40;
-      --border-light: #e9ecef;
-      --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      --radius: 12px;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(-45deg, #e7f0ff, #f8f9fa, #e7f0ff, #f8f9fa);
-      background-size: 400% 400%;
-      animation: animatedGradient 15s ease infinite;
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 24px;
-    }
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 24px;
-      background-color: var(--card-bg);
-      padding: 24px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 24px;
-    }
-    .header-text { flex: 1; }
-    h1 {
-      margin: 0;
-      font-size: 32px;
-      color: var(--primary);
-    }
-    .role {
-      margin-top: 4px;
-      font-size: 18px;
-      color: var(--secondary);
-    }
-    .student-info {
-      margin-top: 10px;
-      color: var(--secondary);
-      font-size: 14px;
-      background-color: var(--bg);
-      padding: 8px 12px;
-      display: inline-block;
-      border-radius: 8px;
-    }
-    .photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 8px;
-      object-fit: cover;
-      border: 4px solid #fff;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 24px;
-    }
-    .card {
-      background-color: var(--card-bg);
-      padding: 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 24px;
-      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
-    }
-    main > .card:last-child { margin-bottom: 0; }
-    aside > .card:last-child { margin-bottom: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(-45deg, #0d1117, #161b22, #0d1117, #161b22);
+            background-size: 400% 400%;
+            animation: animatedGradient 15s ease infinite;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 24px;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 24px;
+            background-color: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+        .header-text { flex: 1; }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            color: var(--primary);
+        }
+        .role {
+            margin-top: 4px;
+            font-size: 18px;
+            color: var(--secondary);
+        }
+        .student-info {
+            margin-top: 10px;
+            color: var(--secondary);
+            font-size: 14px;
+            background-color: var(--bg);
+            padding: 8px 12px;
+            display: inline-block;
+            border-radius: 8px;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 24px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+        }
+        main > .card:last-child { margin-bottom: 0; }
+        aside > .card:last-child { margin-bottom: 0; }
 
-    .section-title {
-      font-weight: 700;
-      font-size: 20px;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--border-light);
-      color: var(--primary);
-    }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 8px; }
-    hr {
-      border: none;
-      height: 1px;
-      background-color: var(--border-light);
-      margin: 20px 0;
-    }
-    p { margin: 0 0 10px 0; }
-    p:last-child { margin-bottom: 0; }
-    a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-    a:hover { color: #0056b3; }
-    
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 12px;
-    }
-    table th, table td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--border-light);
-    }
-    table th { background-color: var(--bg); font-weight: 600; }
-    .skills-table tr:last-child td { border-bottom: none; }
-
-
-    .portfolio-item {
-      background-color: var(--bg);
-      padding: 16px;
-      border-radius: 8px;
-      margin-bottom: 12px;
-      border-left: 4px solid var(--primary);
-    }
-    .portfolio-item:last-child { margin-bottom: 0; }
-    .portfolio-item strong { display: block; margin-bottom: 4px; font-size: 16px;}
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: var(--secondary);
-      font-size: 14px;
-      padding: 20px;
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-    }
+        .section-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-light);
+            color: var(--primary);
+        }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--border-light);
+            margin: 20px 0;
+        }
+        p { margin: 0 0 10px 0; }
+        p:last-child { margin-bottom: 0; }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        a:hover { color: #0056b3; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+        table th { background-color: var(--bg); font-weight: 600; }
+        .skills-table tr:last-child td { border-bottom: none; }
 
 
-    @media (max-width: 800px) {
-      .grid { grid-template-columns: 1fr; }
-      header { text-align: center; flex-direction: column; }
-      .photo { margin-top: 16px; }
-    }
+        .portfolio-item {
+            background-color: var(--bg);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        .portfolio-item:last-child { margin-bottom: 0; }
+        .portfolio-item strong { display: block; margin-bottom: 4px; font-size: 16px;}
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--secondary);
+            font-size: 14px;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+        }
 
 
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
-    @keyframes animatedGradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-  </style>
+        @media (max-width: 800px) {
+            .grid { grid-template-columns: 1fr; }
+            header { text-align: center; flex-direction: column; }
+            .photo { margin-top: 16px; }
+        }
+
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        @keyframes animatedGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="header-text">
-        <h1>Mohamad Saiful Anam Rahmadani</h1>
-        <div class="role">Calon Peserta UKK - Teknik Komputer dan Jaringan (TKJ)</div>
-        <div class="student-info">Absensi: 11 &nbsp;|&nbsp; Kelas: XII TKJ 1</div>
-      </div>
-      <img src="Foto TKJ 1/11.jpg" alt="Foto Saiful" class="photo">
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-text">
+                <h1>Mohamad Saiful Anam Rahmadani</h1>
+                <div class="role">Calon Peserta UKK - Teknik Komputer dan Jaringan (TKJ)</div>
+                <div class="student-info">Absensi: 11 &nbsp;|&nbsp; Kelas: XII TKJ 1</div>
+            </div>
+            <img src="Foto TKJ 1/11.jpg" alt="Foto Saiful" class="photo">
+        </header>
 
-    <div class="grid">
-      <main>
-        <section class="card">
-          <div class="section-title">Profil Singkat</div>
-          <p><strong>Nama:</strong> Mohamad Saiful Anam Rahmadani</p>
-          <p><strong>Tanggal Lahir:</strong> 4 Oktober 2007</p>
-          <p><strong>Alamat:</strong> Kemuning, Ngajum, Malang</p>
-          <hr>
-          <div class="section-title">Riwayat Pendidikan</div>
-          <ul>
-            <li>SMK Budi Mulia Pakisaji — Teknik Komputer & Jaringan</li>
-            <li>SMP Negeri 2 Ngajum</li>
-          </ul>
-        </section>
+        <div class="grid">
+            <main>
+                <section class="card">
+                    <div class="section-title">Profil Singkat</div>
+                    <p><strong>Nama:</strong> Mohamad Saiful Anam Rahmadani</p>
+                    <p><strong>Tanggal Lahir:</strong> 4 Oktober 2007</p>
+                    <p><strong>Alamat:</strong> Kemuning, Ngajum, Malang</p>
+                    <hr>
+                    <div class="section-title">Riwayat Pendidikan</div>
+                    <ul>
+                        <li>SMK Budi Mulia Pakisaji — Teknik Komputer & Jaringan</li>
+                        <li>SMP Negeri 2 Ngajum</li>
+                    </ul>
+                </section>
 
-        <section class="card">
-          <div class="section-title">Keterampilan Dasar</div>
-          <ul>
-            <li>Membangun struktur dan layout halaman web menggunakan HTML.</li>
-            <li>Memberi style pada halaman web dengan CSS untuk tampilan yang menarik.</li>
-            <li>Membuat website multi-halaman (Contoh: Home, About, Contact).</li>
-          </ul>
-        </section>
-        
+                <section class="card">
+                    <div class="section-title">Keterampilan Dasar</div>
+                    <ul>
+                        <li>Membangun struktur dan layout halaman web menggunakan HTML.</li>
+                        <li>Memberi style pada halaman web dengan CSS untuk tampilan yang menarik.</li>
+                        <li>Membuat website multi-halaman (Contoh: Home, About, Contact).</li>
+                    </ul>
+                </section>
+                
 
-        <section class="card">
-          <div class="section-title">Portofolio Mini</div>
-          <ul>
-            <li>
-              <strong>Saipull Web Tugas:</strong> Sebuah website yang berisi tugas-tugas saya.
-              <br><a href="https://github.com/saaciplu/saipull-web-tugas" target="_blank">Link GitHub Project</a>
-            </li>
-            <li>
-              <strong>Remidial Saiful:</strong> Aplikasi web untuk remidial.
-              <br><a href="https://github.com/saaciplu/remidial-saiful" target="_blank">Link GitHub Project</a>
-            </li>
-          </ul>
-        </section>
-      </main>
+                <section class="card">
+                    <div class="section-title">Portofolio Mini</div>
+                    <ul>
+                        <li>
+                            <strong>Saipull Web Tugas:</strong> Sebuah website yang berisi tugas-tugas saya.
+                            <br><a href="https://github.com/saaciplu/saipull-web-tugas" target="_blank">Link GitHub Project</a>
+                        </li>
+                        <li>
+                            <strong>Remidial Saiful:</strong> Aplikasi web untuk remidial.
+                            <br><a href="https://github.com/saaciplu/remidial-saiful" target="_blank">Link GitHub Project</a>
+                        </li>
+                    </ul>
+                </section>
+            </main>
 
-      <aside>
-        <section class="card">
-          <div class="section-title">Kontak & Tautan</div>
-          <p><strong>Email:</strong> <a href="mailto:m.saiful.anam1140@gmail.com">m.saiful.anam1140@gmail.com</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/saaciplu" target="_blank">github.com/saaciplu</a></p>
-          <p><strong>Deploy:</strong> <a href="https://saifulanam-ukk-pw-2025.netlify.app" target="_blank">saifulanam-ukk-pw-2025.netlify.app</a></p>
-        </section>
+            <aside>
+                <section class="card">
+                    <div class="section-title">Kontak & Tautan</div>
+                    <p><strong>Email:</strong> <a href="mailto:m.saiful.anam1140@gmail.com">m.saiful.anam1140@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/saaciplu" target="_blank">github.com/saaciplu</a></p>
+                    <p><strong>Deploy:</strong> <a href="https://saifulanam-ukk-pw-2025.netlify.app" target="_blank">saifulanam-ukk-pw-2025.netlify.app</a></p>
+                </section>
 
-        <section class="card">
-          <div class="section-title">Keahlian Software</div>
-          <table class="skills-table">
-            <thead>
-              <tr><th>Software</th><th>Level (1-5)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Photoshop</td><td>5</td></tr>
-              <tr><td>VS Code</td><td>5</td></tr>
-              <tr><td>Figma</td><td>4</td></tr>
-              <tr><td>Android Studio</td><td>4</td></tr>
-            </tbody>
-          </table>
-        </section>
+                <section class="card">
+                    <div class="section-title">Keahlian Software</div>
+                    <table class="skills-table">
+                        <thead>
+                            <tr><th>Software</th><th>Level (1-5)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Photoshop</td><td>5</td></tr>
+                            <tr><td>VS Code</td><td>5</td></tr>
+                            <tr><td>Figma</td><td>4</td></tr>
+                            <tr><td>Android Studio</td><td>4</td></tr>
+                        </tbody>
+                    </table>
+                </section>
 
-        <section class="card">
-          <div class="section-title">Pelajaran Favorit</div>
-          <ul>
-            <li>Pemrograman WEB ❤️</li>
-            <li>Administrasi Server & Keamanan Jaringan 💕</li>
-            <li>Teknologi Jaringan Luas 👌</li>
-          </ul>
-        </section>
-      </aside>
+                <section class="card">
+                    <div class="section-title">Pelajaran Favorit</div>
+                    <ul>
+                        <li>Pemrograman WEB ❤️</li>
+                        <li>Administrasi Server & Keamanan Jaringan 💕</li>
+                        <li>Teknologi Jaringan Luas 👌</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            Dibuat dengan semangat oleh M. Saiful Anam R. untuk Uji Kompetensi Keahlian (UKK) PW 2025.
+        </footer>
     </div>
-
-    <footer>
-      Dibuat dengan semangat oleh M. Saiful Anam R. untuk Uji Kompetensi Keahlian (UKK) PW 2025.
-    </footer>
-  </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const titleElement = document.querySelector('h1');
-    if (titleElement) {
-      const originalText = titleElement.textContent.trim();
-      titleElement.textContent = '';
-      titleElement.style.display = 'inline-block';
-      titleElement.style.paddingRight = '4px';
-      titleElement.style.borderRight = '3px solid var(--text-main)';
-      titleElement.style.animation = 'blink 0.8s steps(2, start) infinite';
-      titleElement.style.whiteSpace = 'nowrap';
-      let i = 0;
-      function typeWriter() {
-        if (i < originalText.length) {
-          titleElement.textContent += originalText.charAt(i);
-          i++;
-          setTimeout(typeWriter, 110);
-        } else {
-          setTimeout(() => {
-            titleElement.style.borderRight = 'none';
-            titleElement.style.animation = 'none';
-          }, 500);
-        }
-      }
-      setTimeout(typeWriter, 500);
-    }
-  });
-</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const titleElement = document.querySelector('h1');
+            if (titleElement) {
+                const originalText = titleElement.textContent.trim();
+                titleElement.textContent = '';
+                titleElement.style.display = 'inline-block';
+                titleElement.style.paddingRight = '4px';
+                titleElement.style.borderRight = '3px solid var(--text-main)';
+                titleElement.style.animation = 'blink 0.8s steps(2, start) infinite';
+                titleElement.style.whiteSpace = 'nowrap';
+                let i = 0;
+                function typeWriter() {
+                    if (i < originalText.length) {
+                        titleElement.textContent += originalText.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 110);
+                    } else {
+                        setTimeout(() => {
+                            titleElement.style.borderRight = 'none';
+                            titleElement.style.animation = 'none';
+                        }, 500);
+                    }
+                }
+                setTimeout(typeWriter, 500);
+            }
+        });
+    </script>
 </body>
 </html>

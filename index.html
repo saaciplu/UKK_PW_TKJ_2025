@@ -1,4 +1,4 @@
-<!-- BELAJAR JUJUR DALAM MELAKUKAN SEMUA HAL -->
+
 <!doctype html>
 <html lang="id">
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Profil TKJ - 11 - Saiful Anam</title>
   <style>
-    /* --- CSS Internal --- */
+
     :root {
       --bg: #f7f8fb;
       --card-bg: #ffffff;
@@ -128,6 +128,8 @@
     }
     table th { background-color: var(--bg); font-weight: 600; }
     .skills-table tr:last-child td { border-bottom: none; }
+
+
     .portfolio-item {
       background-color: var(--bg);
       padding: 16px;
@@ -148,11 +150,13 @@
       border-radius: var(--radius);
     }
 
+
     @media (max-width: 800px) {
       .grid { grid-template-columns: 1fr; }
       header { text-align: center; flex-direction: column; }
       .photo { margin-top: 16px; }
     }
+
 
     @keyframes blink {
       50% { border-color: transparent; }
@@ -199,16 +203,17 @@
           </ul>
         </section>
         
+
         <section class="card">
           <div class="section-title">Portofolio Mini</div>
           <ul>
             <li>
-              <strong>Proyek Website Pribadi:</strong> Sebuah website portofolio pribadi yang dibangun menggunakan HTML, CSS, dan JavaScript murni untuk menampilkan proyek-proyek saya.
-              <br><a href="https://github.com/saaciplu/personal-website" target="_blank">Link GitHub Project</a>
+              <strong>Saipull Web Tugas:</strong> Sebuah website yang berisi tugas-tugas saya.
+              <br><a href="https://github.com/saaciplu/saipull-web-tugas" target="_blank">Link GitHub Project</a>
             </li>
             <li>
-              <strong>Aplikasi To-Do List:</strong> Aplikasi web sederhana untuk manajemen tugas sehari-hari, dikembangkan dengan React.js dan menyimpan data di localStorage.
-              <br><a href="https://github.com/saaciplu/react-todo-app" target="_blank">Link GitHub Project</a>
+              <strong>Remidial Saiful:</strong> Aplikasi web untuk remidial.
+              <br><a href="https://github.com/saaciplu/remidial-saiful" target="_blank">Link GitHub Project</a>
             </li>
           </ul>
         </section>
@@ -263,7 +268,6 @@
       titleElement.style.borderRight = '3px solid var(--text-main)';
       titleElement.style.animation = 'blink 0.8s steps(2, start) infinite';
       titleElement.style.whiteSpace = 'nowrap';
-
       let i = 0;
       function typeWriter() {
         if (i < originalText.length) {
